@@ -1,36 +1,81 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+My Portfolio
 
-## Getting Started
+A personal developer portfolio built with Next.js and TypeScript, showcasing my projects, skills, and experience.
+Optimized for performance, responsive across all devices, and designed for easy customization.
+✨ Features
 
-First, run the development server:
+    Next.js App Router with TypeScript
 
-```bash
+    Responsive UI using modern CSS or Tailwind
+
+    SEO-ready with meta tags & Open Graph support
+
+    Easy-to-update project and skills data
+
+    Deployable to Vercel, Netlify, or any Node host
+
+🧱 Tech Stack
+
+    Frontend: Next.js, React, TypeScript
+
+    Styling: CSS Modules or Tailwind CSS
+
+    Deployment: Vercel (recommended)
+
+🚀 Getting Started
+
+# 1. Clone the repo
+git clone https://github.com/pahuldeepp/my-portfolio.git
+cd my-portfolio
+
+# 2. Install dependencies
+npm install
+
+# 3. Start the development server
 npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
-```
+# open http://localhost:3000
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+# 4. Build for production
+npm run build
+npm start
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+🗂 Project Structure
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+my-portfolio/
+├─ public/                 # Static assets (images, favicon, resume.pdf)
+├─ src/
+│  ├─ app/                 # App Router pages & layouts
+│  │  ├─ page.tsx          # Home page
+│  │  └─ layout.tsx        # Root layout
+│  ├─ components/          # Reusable UI components (Navbar, Footer, etc.)
+│  ├─ data/                # JSON/TS files for projects & skills
+│  ├─ lib/                 # Utilities & helpers
+│  └─ styles/              # Global and module CSS
+├─ eslint.config.mjs
+├─ next.config.ts
+├─ postcss.config.mjs
+├─ tsconfig.json
+└─ package.json
 
-## Learn More
+🖼 Customization
+1. Update Personal Info
 
-To learn more about Next.js, take a look at the following resources:
+Edit files in src/data/ to change:
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+    Name & role
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+    Skills list
 
-## Deploy on Vercel
+    Contact information
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+2. Add Projects
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+    Add project details in src/data/projects.ts
+
+    Place images in public/projects/
+
+3. Change Theme/Colors
+
+    Modify CSS variables in globals.css
+
+    Or adjust Tailwind theme settings in tailwind.config.js
